@@ -8,11 +8,11 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var http = require('http');
 var PropertiesReader = require('properties-reader');
-global.properties = PropertiesReader('./libserver/application.properties');
+global.properties = PropertiesReader('./libServer/application.properties');
 
 global.poontFunc = require('./libServer/poontFunction');
-global.mongoDb = require('./libserver/mongoBaseConnection')
-global.lineApi = require('./libserver/lineApi');
+global.mongoDb = require('./libServer/mongoBaseConnection')
+global.lineApi = require('./libServer/lineApi');
 
 
 app.set('port', process.env.PORT || 80);
