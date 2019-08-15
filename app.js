@@ -13,6 +13,7 @@ global.properties = PropertiesReader('./libServer/application.properties');
 global.poontFunc = require('./libServer/poontFunction');
 global.mongoDb = require('./libServer/mongoBaseConnection')
 global.lineApi = require('./libServer/lineApi');
+var schedule = require('./libServer/schedule');
 
 
 app.set('port', process.env.PORT || 80);

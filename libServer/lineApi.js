@@ -7,7 +7,6 @@ const client_bot = new lineBot.Client({
 const request = require('request');
 var LineApi = new Object();
 LineApi.pushMessage = function(userId, msg){
-    console.log(msg)
     client_bot.pushMessage(userId,{type:'text',text:msg});
 }
 LineApi.broadcastMessage = function(msg){
